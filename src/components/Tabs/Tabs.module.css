@@ -1,0 +1,49 @@
+.TabContainer {
+  background-color: aliceblue;
+}
+.Tabs {
+  width: 70%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.TabsName {
+  width: 8rem;
+  margin-right: 2rem;
+}
+.TabsName button {
+  display: block;
+  text-align: left;
+  padding: 0.8rem 1rem;
+  margin: 0.5rem 0;
+  width: 100%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: medium;
+}
+.activeBtn {
+  color: #ff0627;
+  border-left: 3px solid #ff0627 !important;
+}
+.TabsInfo {
+  text-align: left;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+.company {
+  background-color: rgb(212, 211, 211);
+  display: inline;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: large;
+  font-weight: bold;
+}
+.dates {
+  color: rgb(168, 167, 167);
+}
+.arrow {
+  /* padding: 1rem; */
+}

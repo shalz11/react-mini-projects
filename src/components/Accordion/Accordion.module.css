@@ -1,0 +1,32 @@
+.accordionContainer {
+  background-color: lemonchiffon;
+  padding-bottom: 2rem;
+}
+.accordion {
+  border: 1px solid rgb(98, 148, 255);
+  border-radius: 0.8rem;
+  width: 70%;
+  margin: 0.8rem auto;
+  padding: 1rem;
+}
+.card {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.title {
+  font-weight: bold;
+  font-size: large;
+}
+.info {
+  padding-top: 0.5rem;
+  text-align: left;
+}
+.btn {
+  border: none;
+  background: transparent;
+  font-size: large;
+}
+.info:empty {
+  display: none;
+}

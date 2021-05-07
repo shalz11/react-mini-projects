@@ -1,0 +1,104 @@
+/*------------------------------------ carousel code starts ----------------------------------------*/
+.carousel-container {
+  background-color: rgb(253, 212, 253);
+  padding-bottom: 2rem;
+}
+.carousel-wrapper {
+  width: 30rem;
+  margin: auto;
+  position: relative;
+}
+.btn-full-screen {
+  position: absolute;
+  bottom: 5rem;
+  right: 1rem;
+  cursor: pointer;
+  padding-bottom: 0.5rem;
+  padding-right: 0.5rem;
+  color: gray;
+  font-size: larger;
+}
+.slider {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 0.25rem;
+  padding: 1.5rem;
+  position: relative;
+}
+.slides {
+  display: flex;
+  justify-content: center;
+}
+.img-container {
+  transition-duration: 150ms;
+}
+.img-container img {
+  border-radius: 0.2rem;
+}
+.img-container img,
+.thumbnail-container img {
+  width: 100%;
+  height: 100%;
+}
+.reel-container {
+  display: flex;
+  margin-top: 1rem;
+  overflow: hidden;
+}
+.active-thumbnail {
+  border: 2px solid rgb(196, 196, 196);
+  border-radius: 0.25rem;
+}
+.thumbnail-container {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 4rem;
+  width: 4rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+.btn-previous,
+.btn-next {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  color: gray;
+  font-size: x-large;
+}
+.btn-previous {
+  left: -5px;
+}
+.btn-next {
+  right: -5px;
+}
+.btn-previous:hover,
+.btn-next:hover,
+.btn-full-screen:hover,
+.btn-compress:hover {
+  color: orange;
+  font-weight: 600;
+}
+
+/* carousel modal code starts */
+.modal-wrapper {
+  margin: auto;
+  max-width: 100%;
+  position: relative;
+}
+.modal-wrapper .btn-previous,
+.modal-wrapper .btn-next {
+  top: 40%;
+}
+.btn-compress {
+  cursor: pointer;
+  position: absolute;
+  bottom: 3rem;
+  right: 1rem;
+  margin: 1rem;
+  float: right;
+  color: gray;
+  font-size: x-large;
+}
+/* carousel modal code ends */
+/*------------------------------------- carousel code ends ------------------------------------------*/

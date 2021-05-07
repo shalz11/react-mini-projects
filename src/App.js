@@ -1,23 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Switch, Route } from "react-router-dom";
+import Layout from "./components/Layout/Layout";
+import Carousel from "./components/Carousel";
+import Tabs from "./components/Tabs";
+import Trips from "./components/Trips";
+import TodoList from "./components/ToDoList";
+import Accordion from "./components/Accordion";
+import Reviews from "./components/Reviews";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Layout>
+        <Switch>
+          <Route exact path="/"></Route>
+          <Route path="/Carousel">
+            <Carousel />
+          </Route>
+          <Route path="/Tabs">
+            <Tabs />
+          </Route>
+          <Route path="/Trips">
+            <Trips />
+          </Route>
+          <Route path="/TodoList">
+            <TodoList />
+          </Route>
+          <Route path="/Accordion">
+            <Accordion />
+          </Route>
+          <Route path="/Reviews">
+            <Reviews />
+          </Route>
+        </Switch>
+      </Layout>
     </div>
   );
 }

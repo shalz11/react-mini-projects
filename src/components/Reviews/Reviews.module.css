@@ -1,0 +1,79 @@
+/* Reviews css code start */
+.ReviewContainer {
+  background-color: powderblue;
+  padding-bottom: 2rem;
+}
+.ReviewCard {
+  width: 40rem;
+  height: auto;
+  margin: 0 auto;
+  background-color: white;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 1.5rem;
+  border-radius: 2rem;
+  border: 2px dotted rgb(60, 255, 0);
+}
+.ReviewImgDiv {
+  border-radius: 50%;
+  background-color: rgb(84, 84, 253);
+  height: 8rem;
+  width: 8rem;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+  z-index: 0;
+}
+.quotes {
+  position: absolute;
+  top: 0.5rem;
+  left: -0.6rem;
+  z-index: 1;
+  padding: 0.6rem 0.7rem 0.4rem;
+  color: white;
+  font-size: small;
+  background-color: rgb(84, 84, 253);
+  border-radius: 50%;
+}
+.ReviewCard img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  position: absolute;
+  right: 0.6rem;
+  top: 0.1rem;
+}
+.job {
+  color: rgb(79, 79, 233);
+  font-weight: 800;
+  font-size: medium;
+}
+.btn button {
+  border: none;
+  background-color: transparent;
+  padding: 0.5rem;
+  margin: 0 0.5rem;
+  color: blue;
+  font-size: larger;
+  font-weight: bold;
+  cursor: pointer;
+}
+.btnRandom {
+  display: block;
+  margin: 1rem auto;
+  cursor: pointer;
+  border: 2px solid rgb(255, 58, 91);
+  border-radius: 1rem;
+  padding: 0.8rem;
+  color: rgb(245, 46, 79);
+  font-weight: bold;
+}
+.btnRandom:hover {
+  background-color: rgb(253, 166, 180);
+}
+.btnRandom:focus,
+.btnRandom:active {
+  border-radius: 1rem;
+}
+/* Reviews css code ends  */
